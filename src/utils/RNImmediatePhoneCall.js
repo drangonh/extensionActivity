@@ -1,8 +1,10 @@
 import {NativeModules} from 'react-native';
 
 var RNImmediatePhoneCall = {
-    immediatePhoneCall: function(number) {
-        NativeModules.RNImmediatePhoneCall.immediatePhoneCall(number);
+    // autoEnd:是否自动挂断电话
+    // number：拨打的手机号码
+    immediatePhoneCall: function(number,autoEnd,callBack) {
+        NativeModules.RNImmediatePhoneCall.immediatePhoneCall(number,autoEnd,callBack);
     }
 };
 
